@@ -1,0 +1,146 @@
+body {
+	background-image: url(../img/newback.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+body .overlay{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: 750px;
+	background-attachment: fixed;
+}
+#btngroup .btn1, #btngroup .btn2, #btngroup .btn3{
+	margin-top: 2%;
+	font-size: 130%;
+	width: 100%;
+	color: white;
+}
+#btngroup .btn1{
+	background-color: rgb(255, 215, 0);
+	border:1px solid rgb(255, 215, 0);
+}
+#btngroup .btn2{
+	background-color: rgb(40, 135, 252);
+	border:1px solid rgb(40, 135, 252);
+}
+#btngroup .btn3{
+	background-color: rgb(255, 75, 0);
+	border:1px solid rgb(255, 75, 0);
+}
+#btngroup .btn1:hover{
+	background-color: white;
+	color: rgb(255, 215, 0);
+	transition: all 0.5s;
+}
+#btngroup .btn2:hover{
+	background-color: white;
+	color: rgb(40, 135, 252);
+	transition: all 0.5s;
+}
+#btngroup .btn3:hover{
+	background-color: white;
+	color: rgb(255, 75, 0);
+	transition: all 0.5s;
+}
+
+#page-content {
+	margin-top: 10%;
+}
+
+/* ---HomePage--- */
+.index-page .box-content {padding: 100px 0;}
+.index-page .box-content.box-1 {margin-top: -300px;}
+@media(max-width:767px){
+	.index-page .box-content.box-1 {margin-top: 0;}
+}
+.box-content.box-1 .box-item{background-color: #fff;margin: 0 auto 30px;max-width: 500px;}
+.box-content.box-1 .box-item:hover img{opacity: 0.9;} 
+.box-content.box-1 .box-item .content{padding: 10px 30px 30px;} 
+.box-content.box-1 .box-item img {width: 100%;}
+.box-content.box-1 .box-item a{color: #0aac8e;font-weight: bold;}
+.box-content.box-1 .box-item .content h3{font-weight: 500;color: #333;font-size: 24px;margin-bottom: 20px;} 
+.box-content.box-1 .box-item .content span{color: #bbb;font-size: 15px;}
+.box-content.box-1 .box-item .selfie img{width: 25%;}
+
+.bottom .btn1, .bottom .btn2, .bottom .btn3, .bottom .btn4 {
+	width: 24%;
+	background-color: transparent;
+	border:1px solid rgb(247, 247, 243);
+}
+.bottom .btn1:hover {
+	color: white;
+	background-color: rgb(255, 75, 0);
+	transition: all 0.5s;
+}
+.bottom .btn2:hover {
+	color: white;
+	background-color: rgb(255, 215, 0);
+	transition: all 0.5s;
+}
+.bottom .btn3:hover {
+	color: white;
+	background-color: rgb(40, 135, 252);
+	transition: all 0.5s;
+}
+.bottom .btn4:hover {
+	color: white;
+	background-color: #0aac8e;
+	transition: all 0.5s;
+}
+
+.box-item .ii {
+	font-size: 100px;
+}
+
+ footer {
+ 	margin-top:5% !important;
+ 	padding-bottom: 7% !important;
+ 	color: rgb(111, 113, 111) !important;
+ }
+
+
+
+
+
+
+/*Animation*/
+.box-item .slideanimation {
+	visibility:hidden;
+}
+.slideanimation {
+	visibility:hidden;
+}
+.slide {
+	animation-name: slide;
+	-webkit-animation-name:slide;
+	animation-duration: 1s;
+	-webkit-animation-duration:1s;
+	visibility: visible;
+}
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@-webkit-keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}

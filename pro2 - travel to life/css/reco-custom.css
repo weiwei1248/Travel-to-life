@@ -1,0 +1,124 @@
+a {
+	 text-decoration: none;
+}
+
+#detail {
+	margin-top: 2%;
+	color: black;
+}
+detail-inner .col-sm-4 {
+	padding: 50% 5%;
+}
+#detail a{
+	font-size: 130%;
+}
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+}
+#infor {
+	color: white;
+	margin-left: 12px;
+	margin-top: 5px;
+}
+#infor_img img{
+	width: 100%;
+}
+
+/*****************************photo animation****************************/
+.photo {
+	position: relative;
+	text-align:center; 
+	overflow:hidden; 
+}
+.photo .heading, .photo .caption {
+	position:absolute; 
+	background:#000; 
+	height:22%; 
+	width:100%; 
+	opacity:0.6; 
+}
+.photo .heading { 
+	top:-100px;
+ }
+.photo .caption { 
+	bottom:-100px; left:0px; 
+}
+.photo .heading span { 
+	color:white; 
+	top:-50px; 
+	font-size: 150%;
+	font-weight:bold; 
+	display:block; 
+}
+.photo .caption span { 
+	color:rgb(247, 247, 243); 
+	font-size:70%; 
+	display:block;
+
+}
+/*****************************photo animation****************************/
+
+recom .col-sm-9 {
+	color: white;
+}
+recom .col-sm-4 {
+	padding: 4% 5% 0;
+	margin-left: 4%; 
+}
+recom .col-sm-4 .btn1 {
+	background-color: transparent;
+	border:1px solid white;
+	padding: 8% 14%;
+}
+recom .col-sm-4 .btn1:hover {
+	background-color: white;
+	color: rgb(255, 215, 0);
+	transition: all 0.5s;
+}
+
+#recom1  {
+	background-color: rgb(247, 247, 243);
+	padding: 0 2%;
+}
+#image img {
+	width: 16%;
+}
+
+#score img {
+	width: 15%;
+}
+
+/*****************************slide****************************/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

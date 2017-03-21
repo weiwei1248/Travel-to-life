@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recommendation</title>
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="css/reco-custom.css" type="text/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body class="overlay">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">TRAVEL</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#tf-home">HOME</a></li>
+        <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOUR
+		<span class="caret"></span>
+        </a>
+		<ul class="dropdown-menu">
+			<li><a href="#">News</a></li>
+			<li><a href="#">Recommendation</a></li>
+      <li><a href="#">Plan</a></li>
+		 </ul>
+        </li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Sign up</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+		<li data-target="#myCarousel" data-slide-to="5"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="img/map/asia.jpg" alt="Asia">
+			<div class="carousel-caption">
+				<h3>Asia</h3>
+				<p>Travel in Asia</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/map/africa.jpg" alt="Africa">
+			<div class="carousel-caption">
+				<h3>Africa</h3>
+				<p>Travel in Africa</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/map/n-am.jpg" alt="North-America">
+			<div class="carousel-caption">
+				<h3>North-Americ</h3>
+				<p>Travel in North-America</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/map/s-am.jpg" alt="Sorth-America">
+			<div class="carousel-caption">
+				<h3>Sorth-America</h3>
+				<p>Travel in Sorth-America</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/map/europe.jpg" alt="Europe">
+			<div class="carousel-caption">
+				<h3>Europe</h3>
+				<p>Travel in Europe</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/map/aus.jpg" alt="Australia">
+			<div class="carousel-caption">
+				<h3>Australia</h3>
+				<p>Travel in Australia</p>
+			</div>
+		</div>
+	</div>
+	<!-- Left and Right Control -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="ture"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="ture"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+
+<!-----------------------------------------Diary-------------------------------------->
+<recom class="container-fluid">
+	<div class="row content">
+		<div class="col-sm-9">
+			<div class="col-sm-12" style="background-color: rgb(255, 215, 0);">
+				<div class="col-sm-3">
+					<h2><strong><span style="font-size: 300%">D</span>iary</strong></h2>
+				</div>
+				<div class="col-sm-4" style="float: right;">
+					<button class="btn1 btn-lg">Show your experience</button>
+				</div>
+				<div class="col-sm-4" style="float: right;">
+					<button class="btn1 btn-lg">Create your album</button>
+				</div>
+			</div>
+			<div class="col-sm-12" style="background-color: rgb(255, 215, 0);"><hr>
+				<p><em>Reasons for traveling include recreation, tourism or vacationing, research travel for the gathering of information,  such as public transport, automobiles, trains and airplanes. <a href="#">more...</a></em></p>
+			</div>
+<!-------------------------------------------Diary details------------------------------------------>
+			<div id="detail" class="col-sm-6" style="margin-bottom: 5%;">
+				<img src="img/travel/Italy.jpg" style="width: 100%">
+				<p> </p>
+				<a href="#">Travel to Italy: The most beautiful experience</a><br>
+				<p><img src="img/image/i2.jpg" style="width: 15%"> Josh Aliphal</p>
+			</div>	
+			<div class="col-sm-3" id="detail">
+				<img src="img/travel/egypt.jpg" style="width: 100%">
+				<p> </p>
+				<a href="#">You know Egypt?</a><br>
+				<p><img src="img/image/i6.jpg" style="width: 15%"> Haya Binken</p>
+			</div>
+			<div class="col-sm-3" id="detail">
+				<img src="img/travel/yunnan.jpg" style="width: 100%">
+				<p> </p>
+				<a href="#">This is a MISTORY</a><br>
+				<p><img src="img/image/i4.jpg" style="width: 15%"> Josh Aliphal</p>
+			</div>
+			<div class="col-sm-3" id="detail">
+				<img src="img/travel/thailand.jpg" style="width: 100%">
+				<p> </p>
+				<a href="#">Sawadika</a><br>
+				<p><img src="img/image/i3.jpg" style="width: 15%"> Josh Aliphal</p>
+			</div>
+			<div class="col-sm-3" id="detail">
+				<img src="img/travel/korea.jpg" style="width: 100%">
+				<p> </p>
+				<a href="#">Always crowded</a><br>
+				<p><img src="img/image/i1.jpg" style="width: 15%"> Josh Aliphal</p>
+			</div>
+			<div class="col-sm-3" id="detail">
+				<img src="img/travel/egypt.jpg" style="width: 100%">
+				<p> </p>
+				<a href="#">You know Egypt?</a><br>
+				<p><img src="img/image/i6.jpg" style="width: 15%"> Haya Binken</p>
+			</div>
+			<div class="col-sm-3" id="detail">
+				<img src="img/travel/yunnan.jpg" style="width: 100%">
+				<p> </p>
+				<a href="#">This is a MISTORY</a><br>
+				<p><img src="img/image/i4.jpg" style="width: 15%"> Josh Aliphal</p>
+			</div>
+<!----------------------------------Information---------------------------------------->
+			<div class="col-sm-7" id="infor" style="background-color: rgb(40, 135, 252); margin-top: 50px;">
+			<h1>Season</h1>
+			</div>
+			<div class="col-sm-12" id="infor_img" style="margin-top: 10px;">
+			<br>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/spring.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/autumn.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/summer.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/winter.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+			</div>
+
+			<div class="col-sm-7" id="infor" style="background-color: rgb(255, 75, 0);">
+			<h1>Traffic</h1>
+			</div>
+			<div class="col-sm-12" id="infor_img" style="margin-top: 10px;">
+				<div class="col-sm-3">
+					<img src="img/map/plane.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+
+				<div class="col-sm-3">
+					<img src="img/map/train.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/map/car.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/map/cycle.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/map/bus.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/map/balloon.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/map/plane.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<img src="img/map/car.jpg" class="img-rounded">
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+			</div>
+			<div class="col-sm-7" id="infor" style="background-color: rgb(255, 215, 0);">
+			<h1>Theme</h1>
+			</div>
+			<div class="col-sm-12" id="infor_img" style="margin-top: 10px;">
+			<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/history.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/photo.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/park.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/flower.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/honey.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="photo">
+						<div class="heading"><span>Florida</span></div>
+						<img src="img/map/history.jpg" class="img-rounded">
+						<div class="caption"><span> is a state located in the southeastern
+						 region of the United States. </span></div>
+					</div>
+					<p><a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a>, <a href="#">China</a></p>
+				</div>
+			</div>
+
+		</div> 
+<!----------------------------------Travel Star---------------------------------------->
+		<div id="recom1" class="col-sm-3" >
+			<h3>Travel Star<span style="font-size: 50%;color: grey;"><em> Reasons for traveling</em></span></h3>
+			<div id="image">
+				<img src="img/image/i1.jpg">
+				<img src="img/image/i2.jpg">
+				<img src="img/image/i5.jpg">
+				<img src="img/image/i4.jpg">
+				<img src="img/image/i3.jpg">
+				<img src="img/image/i6.jpg">
+				<img src="img/image/i5.jpg">
+				<img src="img/image/i1.jpg">
+				<img src="img/image/i2.jpg">
+				<a href="#"  class="glyphicon glyphicon-chevron-right"></a>
+			</div>
+			<br>
+			<h4>Active writer</h4>
+			<table class="table table-striped" id="image">
+				<tbody>
+					<tr>
+						<td style="color: rgb(255, 75, 0);"">1</td>
+						<td><img src="img/image/i2.jpg"> <a href="#">Josh Aliphal</a></td>
+						<td>3000</td>
+					</tr>
+					<tr>
+						<td style="color: rgb(255, 75, 0);"">2</td>
+						<td><img src="img/image/i6.jpg"> <a href="#">Haya Binken</a></td>
+						<td>1571</td>
+					</tr>
+					<tr>
+						<td style="color: rgb(255, 75, 0);"">3</td>
+						<td><img src="img/image/i3.jpg"> <a href="#">Loury Gartya</a></td>
+						<td>1250</td>
+					</tr>
+					<tr>
+						<td style="color: grey;"">4</td>
+						<td><img src="img/image/i1.jpg"> <a href="#">Pil Paspagra</a></td>
+						<td>1033</td>
+					</tr>
+					<tr>
+						<td style="color: grey;"">5</td>
+						<td><img src="img/image/i4.jpg"> <a href="#">Jiangsuo Jun</a></td>
+						<td>1005</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>New arrive</h4>
+			<a href="#">[Tokyo] Such beautiful scene in Japan</a><br>
+			<a href="#">[China] New tour in China!</a><br>
+			<a href="#">[Italy] Travel with alone</a><br>
+			<a href="#">More...</a>
+			<h4>Announcement</h4>
+			<a href="#">Please pay attention to the rules</a><br>
+			<a href="#">New year activities register</a><br>
+			<a href="#">Information - How to use search function?</a><br>
+			<a href="#">More...</a>
+			<h4>New arrive</h4>
+			<a href="#">[Tokyo] Such beautiful scene in Japan</a><br>
+			<a href="#">[China] New tour in China!</a><br>
+			<a href="#">[Italy] Travel with alone</a><br>
+			<a href="#">More...</a>
+			<h4>Announcement</h4>
+			<a href="#">Please pay attention to the rules</a><br>
+			<a href="#">New year activities register</a><br>
+			<a href="#">Information - How to use search function?</a><br>
+			<a href="#">More...</a>
+			<h4>Announcement</h4>
+			<a href="#">Please pay attention to the rules</a><br>
+			<a href="#">New year activities register</a><br>
+			<a href="#">Information - How to use search function?</a><br>
+			<a href="#">More...</a>	
+			<br>
+			<h4>Popular diary</h4>
+			<table class="table table-striped" id="image">
+				<tbody>
+					<tr>
+						<td style="color: rgb(255, 75, 0);"">1</td>
+						<td><img src="img/image/i2.jpg"> <a href="#">Josh Aliphal</a></td>
+						<td>3000</td>
+					</tr>
+					<tr>
+						<td style="color: rgb(255, 75, 0);"">2</td>
+						<td><img src="img/image/i6.jpg"> <a href="#">Haya Binken</a></td>
+						<td>1571</td>
+					</tr>
+					<tr>
+						<td style="color: rgb(255, 75, 0);"">3</td>
+						<td><img src="img/image/i3.jpg"> <a href="#">Loury Gartya</a></td>
+						<td>1250</td>
+					</tr>
+					<tr>
+						<td style="color: grey;"">4</td>
+						<td><img src="img/image/i1.jpg"> <a href="#">Pil Paspagra</a></td>
+						<td>1033</td>
+					</tr>
+					<tr>
+						<td style="color: grey;"">5</td>
+						<td><img src="img/image/i4.jpg"> <a href="#">Jiangsuo Jun</a></td>
+						<td>1005</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>New arrive</h4>
+			<a href="#">[Tokyo] Such beautiful scene in Japan</a><br>
+			<a href="#">[China] New tour in China!</a><br>
+			<a href="#">[Italy] Travel with alone</a><br>
+			<a href="#">More...</a>
+			<h4>Announcement</h4>
+			<a href="#">Please pay attention to the rules</a><br>
+			<a href="#">New year activities register</a><br>
+			<a href="#">Information - How to use search function?</a><br>
+			<a href="#">More...</a>
+		</div>
+	</div>
+</recom>
+
+<!---------------------------------------------Footer-------------------------------------------->
+<footer class="container-fluid text-center" style="background-color:rgb(247, 247, 243)">
+    <a class="up-arrow" href="#myCarousel">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <br><br><br>
+  <p>Created by Vian Wu</p>
+</footer>
+	
+</body>
+</html>
